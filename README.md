@@ -1,2 +1,2 @@
-# NeverNullDict
-Python Dictionary that does not have 
+# NeverNoneDict
+Python Dictionary that does not have None values.
