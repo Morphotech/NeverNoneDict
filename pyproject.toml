@@ -9,7 +9,7 @@ license = "MIT"
 python = "^3.5"
 
 [tool.poetry.dev-dependencies]
-tox = "~3.15"
+tox = "*"
 
 [build-system]
 requires = ["poetry>=1.0"]
