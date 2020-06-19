@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "nndict"
-version = "1.0.0"
+version = "1.0.1-dev"
 description = "A dict that does not support None entries. Silently deletes entry if updated to null and works recursively."
 authors = ["Tiago Santos <tiago.santos@vizidox.com>"]
 license = "MIT"
@@ -11,6 +11,7 @@ maintainers = ["Sara Pereira <sara.pereira@vizidox.com>",
                "Hieu Le <hieu.le@vizidox.com>"]
 classifiers = ["License :: OSI Approved :: MIT License",
                "Programming Language :: Python :: 3"]
+readme = "README.md"
 
 [tool.poetry.dependencies]
 python = "^3.5"
