@@ -6,11 +6,14 @@ class NeverNoneDict(UserDict):
     Dictionary with no None entries.
     Deletes keys that get updated to None and works recursively.
 
-    >>> NeverNoneDict({"a": 2, "b": None, "c": {"d": None}})
-    {'a': 2, 'c': {}}
-    >>> dict_ = NeverNoneDict({"a": 2})
-    >>> dict_["a"] = None
-    >>> dict_
+    >>> nndict_ = NeverNoneDict({"a": 2, "b": None, "c": {"d": None}})
+    >>> nndict_ == {'a': 2, 'c': {}}
+    True
+    >>> nndict_ = NeverNoneDict({"a": 2})
+    >>> nndict_ == {'a': 2}
+    True
+    >>> nndict_["a"] = None
+    >>> nndict_
     {}
     """
     def __setitem__(self, key, value):
