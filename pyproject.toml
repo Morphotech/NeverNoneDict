@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "nndict"
-version = "2.0.1"
+version = "2.1.0-dev"
 description = "A dict that does not support None entries. Silently deletes entry if updated to null and works recursively."
 authors = ["Tiago Santos <tiago.santos@vizidox.com>"]
 readme = "README.md"
